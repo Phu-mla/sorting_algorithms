@@ -5,7 +5,7 @@
  * @num1: The first integer to swap.
  * @num2: The second integer to swap.
  */
-void swap_ints(int *num1, int *num2)
+void swap_int(int *num1, int *num2)
 {
 	int temp;
 
@@ -39,7 +39,7 @@ void shell_sort(int *array, size_t size)
 			j = i;
 			while (j >= gap && array[j - gap] > array[j])
 			{
-				swap_ints(array + j, array + (j - gap));
+				swap_int(array + j, array + (j - gap));
 				j -= gap;
 			}
 		}
